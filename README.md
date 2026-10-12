@@ -25,8 +25,11 @@ npm run dev
 - `src/cards-i18n.js`, `src/i18n.js` : traductions
 - `src/promo.js`, `promo.html` : générateur de la vidéo promo
 - `scripts/icons.mjs` : génère les icônes de la PWA au build
-- `scripts/fetch-cards.mjs` : télécharge et optimise les images des cartes au build
+- `public/cards/` : les images des 61 cartes (WebP 720x1280)
+- `scripts/fetch-cards.mjs` : au build, télécharge seulement les images de cartes qui manquent dans `public/cards/`
 
 ## Ajouter une carte
 
-Ajouter une entrée dans `src/cards.json`, puis pousser sur `main`.
+1. Déposer l'image dans `public/cards/<id>.webp` (ou renseigner `src` avec l'URL de l'image : elle sera téléchargée et convertie au build).
+2. Ajouter l'entrée dans `src/cards.json` (id, mots-clés, thèmes, indices pour les bots) et sa traduction dans `src/cards-i18n.js`.
+3. Pousser sur `main` : Vercel redéploie tout seul.

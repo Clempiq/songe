@@ -3,6 +3,5 @@ dist/
 .vercel/
 .env*
 *.log
-# Generes au build (scripts/icons.mjs et scripts/fetch-cards.mjs)
-public/cards/
+# Genere au build par scripts/icons.mjs
 public/icons/
