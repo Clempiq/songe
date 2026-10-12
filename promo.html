@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0E0D18">
+<title>Songe, la bande-annonce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Figtree:wght@500;700;800&display=swap">
+<style>
+html,body{margin:0;height:100%;background:#0E0D18;color:#F4F1FF;font-family:Figtree,system-ui,sans-serif}
+main{min-height:100%;box-sizing:border-box;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;gap:16px}
+#cv{height:min(78vh,calc((100vw - 32px) * 16 / 9));aspect-ratio:9/16;max-width:100%;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.6);background:#14122a}
+.bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;max-width:560px}
+button{appearance:none;border:none;min-height:52px;padding:0 24px;border-radius:16px;background:#FFC93C;color:#14131F;font:800 17px Syne,sans-serif;cursor:pointer}
+button:disabled{opacity:.4;cursor:wait}
+a{color:#D6D2EE}
+#status{font-size:14px;color:#A9A4C8;text-align:center;max-width:52ch;margin:0}
+</style>
+</head>
+<body>
+<main>
+<canvas id="cv" aria-label="Bande-annonce animée du jeu Songe"></canvas>
+<div class="bar"><button id="dl" disabled>Télécharger la vidéo</button><a href="/">Jouer à Songe</a></div>
+<p id="status" role="status">Chargement des cartes…</p>
+</main>
+<script type="module" src="/src/promo.js"></script>
+</body>
+</html>

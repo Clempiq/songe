@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vercel/
+.env*
+*.log
+# Generes au build (scripts/icons.mjs et scripts/fetch-cards.mjs)
+public/cards/
+public/icons/
