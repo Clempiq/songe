@@ -2,7 +2,7 @@
 
 > Un jeu d'indices et d'images à jouer entre amis, chacun sur son téléphone, directement dans le navigateur.
 
-**Jouer :** [songe-jeu.vercel.app](https://songe-jeu.vercel.app)
+**Site :** [songe-jeu.vercel.app](https://songe-jeu.vercel.app) (multijoueur en veille, voir Statut)
 
 ## Le concept
 
@@ -62,7 +62,9 @@ Le build (`npm run build`) génère les icônes de la PWA puis télécharge et c
 
 ## Statut
 
-✅ **Jouable en ligne.** Premier jeu du studio [Cosmoth](https://cosmoth.vercel.app). Pistes suivantes : packs de cartes supplémentaires et diffusion à l'international.
+🌙 **Déployé, serveur temps réel en veille.** Le site est en ligne, mais le multijoueur repose sur un projet Supabase (offre gratuite) actuellement en pause : les salons ne fonctionnent pas tant qu'il n'est pas réactivé. Démo réactivable sur demande.
+
+Premier jeu du studio [Cosmoth](https://cosmoth.vercel.app). Pistes suivantes : packs de cartes supplémentaires et diffusion à l'international.
 
 ## Ce que j'ai appris
 
